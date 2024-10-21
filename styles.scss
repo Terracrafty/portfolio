@@ -1,0 +1,29 @@
+
+@import "reset";
+
+$bgcolor: #201436;
+$pinkgradient: linear-gradient(to bottom right, hotpink, pink);
+
+body {
+    background-color: $bgcolor;
+    margin: 0;
+    height: 100%;
+}
+
+.hero {
+    background-image: $pinkgradient;
+    border: 10px hotpink outset;
+    height: 400px;
+    padding: 40px;
+    margin: 40px 20%;
+    border-radius: 20px;
+    h1 {
+        font-size: 3.5em;
+        margin: 10px;
+    }
+    img {
+        float: right;
+        border: 3px dashed white;
+        border-radius: 10px;
+    }
+}

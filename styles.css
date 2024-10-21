@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #201436;
+  margin: 0;
+  height: 100%;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom right, hotpink, pink);
+  border: 10px hotpink outset;
+  height: 400px;
+  padding: 40px;
+  margin: 40px 20%;
+  border-radius: 20px;
+}
+.hero h1 {
+  font-size: 3.5em;
+  margin: 10px;
+}
+.hero img {
+  float: right;
+  border: 3px dashed white;
+  border-radius: 10px;
+}/*# sourceMappingURL=styles.css.map */
