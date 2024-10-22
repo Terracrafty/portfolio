@@ -10,20 +10,46 @@ body {
   height: 100%;
 }
 
-.hero {
+.content {
+  margin: auto;
+  max-width: 1200px;
+}
+.content .hero {
   background-image: linear-gradient(to bottom right, hotpink, pink);
   border: 10px hotpink outset;
-  height: 400px;
+  height: auto;
+  min-height: 400px;
   padding: 40px;
-  margin: 40px 20%;
+  margin: 40px 15px;
   border-radius: 20px;
 }
-.hero h1 {
+.content .hero h1 {
   font-size: 3.5em;
   margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
-.hero img {
+@media screen and (max-width: 650px) {
+  .content .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+}
+.content .hero p {
+  font-size: 1.5em;
+  margin: 10px;
+}
+.content .hero img {
   float: right;
   border: 3px dashed white;
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 650px) {
+  .content .hero img {
+    display: block;
+    float: none;
+    margin: 0px auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
