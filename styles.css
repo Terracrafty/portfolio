@@ -52,4 +52,31 @@ body {
     float: none;
     margin: 0px auto;
   }
+}
+.content nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  max-width: 1000px;
+  margin: auto;
+}
+.content nav a {
+  box-sizing: content-box;
+  display: block;
+  background-image: linear-gradient(to bottom right, hotpink, pink);
+  border: 5px hotpink outset;
+  border-radius: 10px;
+  font-size: 1.5em;
+  height: 1.5em;
+  width: 150px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .content nav a {
+    width: 120px;
+  }
 }/*# sourceMappingURL=styles.css.map */
