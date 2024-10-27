@@ -65,8 +65,8 @@ body {
 .content nav a {
   box-sizing: content-box;
   display: block;
-  background-image: linear-gradient(to bottom right, hotpink, pink);
-  border: 5px hotpink outset;
+  background-image: linear-gradient(to bottom right, darkslateblue, darkorchid);
+  border: 5px darkslateblue outset;
   border-radius: 10px;
   font-size: 1.5em;
   height: 1.5em;
@@ -74,6 +74,8 @@ body {
   margin: 5px;
   padding: 10px;
   text-align: center;
+  color: white;
+  text-decoration: none;
 }
 @media screen and (max-width: 650px) {
   .content nav a {

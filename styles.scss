@@ -3,6 +3,7 @@
 
 $bgcolor: #201436;
 $pinkgradient: linear-gradient(to bottom right, hotpink, pink);
+$spacegradient: linear-gradient(to bottom right, darkslateblue, darkorchid);
 
 body {
     background-color: $bgcolor;
@@ -61,8 +62,8 @@ body {
         a {
             box-sizing: content-box;
             display: block;
-            background-image: $pinkgradient;
-            border: 5px hotpink outset;
+            background-image: $spacegradient;
+            border: 5px darkslateblue outset;
             border-radius: 10px;
             font-size: 1.5em;
             height: 1.5em;
@@ -70,10 +71,13 @@ body {
             margin: 5px;
             padding: 10px;
             text-align: center;
+            color: white;
+            text-decoration: none;
 
             @media screen and (max-width: 650px) {
                 width: 120px;
             }
         }
     }
+    
 }
