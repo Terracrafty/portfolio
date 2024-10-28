@@ -3,7 +3,24 @@
 
 $bgcolor: #201436;
 $pinkgradient: linear-gradient(to bottom right, hotpink, pink);
+$pinkborder: 10px hotpink outset;
 $spacegradient: linear-gradient(to bottom right, darkslateblue, darkorchid);
+$spaceborder: 10px darkslateblue outset;
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@mixin fontLilita {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin fontNunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
 body {
     background-color: $bgcolor;
@@ -16,13 +33,14 @@ body {
     max-width: 1200px;
     .hero {
         background-image: $pinkgradient;
-        border: 10px hotpink outset;
+        border: $pinkborder;
         height: auto;
         min-height: 400px;
         padding: 40px;
-        margin: 40px 15px;
+        margin: 40px 10px;
         border-radius: 20px;
         h1 {
+            @include fontLilita;
             font-size: 3.5em;
             margin: 10px;
             margin-top: 20px;
@@ -34,6 +52,7 @@ body {
             }
         }
         p {
+            @include fontNunito;
             font-size: 1.5em;
             margin: 10px;
         }
@@ -43,6 +62,8 @@ body {
             border-radius: 10px;
             max-width: 100%;
             height: auto;
+            margin-left: 20px;
+            margin-bottom: 20px;
 
             @media screen and (max-width: 650px) {
                 display: block;
@@ -58,12 +79,14 @@ body {
         align-items: flex-start;
         align-content: flex-start;
         max-width: 1000px;
-        margin: auto;
+        margin: 40px auto;
         a {
+            @include fontNunito;
             box-sizing: content-box;
             display: block;
             background-image: $spacegradient;
-            border: 5px darkslateblue outset;
+            border: $spaceborder;
+            border-width: 5px;
             border-radius: 10px;
             font-size: 1.5em;
             height: 1.5em;
@@ -79,5 +102,50 @@ body {
             }
         }
     }
-    
+    .leftCard {
+        @include fontNunito;
+        background-image: $pinkgradient;
+        border: $pinkborder;
+        border-radius: 20px;
+        max-width: 1000px;
+        min-height: 400px;
+        margin: 20px 10px;
+        padding: 40px;
+
+        h1 {
+            font-size: 2.5em;
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+        img {
+            float: left;
+            border: 3px dashed white;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .rightCard {
+        @extend .leftCard;
+        background-image: $spacegradient;
+        border: $spaceborder;
+        color: white;
+        margin-left: auto;
+
+        @media screen and (max-width: 1020px) {
+            margin-left: 10px;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-right: 0px;
+        }
+    }
 }
