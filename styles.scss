@@ -117,10 +117,12 @@ body {
             margin: 10px;
             margin-bottom: 20px;
         }
+
         p {
             font-size: 1.2em;
             margin: 10px;
         }
+
         img {
             float: left;
             border: 3px dashed white;
@@ -129,6 +131,43 @@ body {
             height: auto;
             margin-right: 20px;
             margin-bottom: 20px;
+        }
+
+        iframe {
+            float: left;
+            border: 3px dashed white;
+            width: 560;
+            height: 315;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 650px) {
+                width: 280px;
+                height: 158px; /* this kinda sucks but making youtube embeds act normal is fucking impossible so this is the best we're getting */
+            }
+        }
+
+        table { /* this looks like ass lol */
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+            font-size: 1.5em;
+            border: 4px dotted white;
+
+            thead {
+                background-color: #30295D;
+            }
+
+            th, td {
+                padding: 10px 20px;
+                text-align: center;
+            }
+
+            tbody {
+                background-color: #5b4eb1;
+            }
         }
     }
     .rightCard {
@@ -146,6 +185,18 @@ body {
             float: right;
             margin-left: 20px;
             margin-right: 0px;
+        }
+
+        iframe {
+            float: right;
+            margin-left: 20px;
+            margin-right: 0px;
+        }
+
+        table {
+            float: right;
+            margin-right: 0px;
+            margin-left: 20px;
         }
     }
 }
