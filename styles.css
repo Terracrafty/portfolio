@@ -30,14 +30,23 @@ body {
   font-style: normal;
   font-size: 3.5em;
   margin: 10px;
-  margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 @media screen and (max-width: 650px) {
   .content .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
   }
+}
+.content .hero h2 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2em;
+  margin: 10px;
+  margin-top: 20px;
 }
 .content .hero p {
   font-family: "Nunito", sans-serif;
@@ -46,6 +55,7 @@ body {
   font-style: normal;
   font-size: 1.5em;
   margin: 10px;
+  margin-top: 20px;
 }
 .content .hero img {
   float: right;
@@ -115,9 +125,13 @@ body {
   margin: 10px;
   margin-bottom: 20px;
 }
-.content .leftCard p, .content .rightCard p {
+.content .leftCard p, .content .rightCard p, .content .leftCard a, .content .rightCard a {
   font-size: 1.2em;
   margin: 10px;
+}
+.content .leftCard a, .content .rightCard a {
+  display: block;
+  color: black;
 }
 .content .leftCard img, .content .rightCard img {
   float: left;
@@ -143,7 +157,7 @@ body {
     height: 158px; /* this kinda sucks but making youtube embeds act normal is fucking impossible so this is the best we're getting */
   }
 }
-.content .leftCard table, .content .rightCard table { /* this looks like ass lol */
+.content .leftCard table, .content .rightCard table { /* this looks fine actually but tables are apparently impossible to make behave too */
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -158,8 +172,18 @@ body {
   padding: 10px 20px;
   text-align: center;
 }
+@media screen and (max-width: 650px) {
+  .content .leftCard table th, .content .rightCard table th, .content .leftCard table td, .content .rightCard table td {
+    padding: 10px;
+  }
+}
 .content .leftCard table tbody, .content .rightCard table tbody {
   background-color: #5b4eb1;
+}
+@media screen and (max-width: 650px) {
+  .content .leftCard table, .content .rightCard table {
+    font-size: 1.2em;
+  }
 }
 .content .rightCard {
   background-image: linear-gradient(to bottom right, darkslateblue, darkorchid);
@@ -171,6 +195,9 @@ body {
   .content .rightCard {
     margin-left: 10px;
   }
+}
+.content .rightCard a {
+  color: white;
 }
 .content .rightCard img {
   float: right;

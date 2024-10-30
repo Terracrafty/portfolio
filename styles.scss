@@ -43,18 +43,25 @@ body {
             @include fontLilita;
             font-size: 3.5em;
             margin: 10px;
-            margin-top: 20px;
-            margin-bottom: 80px;
+            margin-bottom: 120px;
 
             @media screen and (max-width: 650px) {
                 font-size: 3em;
                 margin-bottom: 20px;
             }
         }
+        h2 {
+            @include fontNunito;
+            font-weight: 800;
+            font-size: 2em;
+            margin: 10px;
+            margin-top: 20px
+        }
         p {
             @include fontNunito;
             font-size: 1.5em;
             margin: 10px;
+            margin-top: 20px;
         }
         img {
             float: right;
@@ -118,9 +125,14 @@ body {
             margin-bottom: 20px;
         }
 
-        p {
+        p, a {
             font-size: 1.2em;
             margin: 10px;
+        }
+
+        a {
+            display: block;
+            color: black;
         }
 
         img {
@@ -148,7 +160,7 @@ body {
             }
         }
 
-        table { /* this looks like ass lol */
+        table { /* this looks fine actually but tables are apparently impossible to make behave too */
             float: left;
             margin-right: 20px;
             margin-bottom: 20px;
@@ -163,10 +175,18 @@ body {
             th, td {
                 padding: 10px 20px;
                 text-align: center;
+
+                @media screen and (max-width: 650px) {
+                    padding: 10px;
+                }
             }
 
             tbody {
                 background-color: #5b4eb1;
+            }
+
+            @media screen and (max-width: 650px) {
+                font-size: 1.2em;
             }
         }
     }
@@ -179,6 +199,10 @@ body {
 
         @media screen and (max-width: 1020px) {
             margin-left: 10px;
+        }
+
+        a {
+            color: white;
         }
 
         img {
