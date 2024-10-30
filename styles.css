@@ -40,7 +40,8 @@ body {
 }
 .content .hero h2 {
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
+  /*font-optical-sizing: auto; */
+  /* apparently this property doesnt exist according to w3c so idk */
   font-weight: 400;
   font-style: normal;
   font-weight: 800;
@@ -50,7 +51,8 @@ body {
 }
 .content .hero p {
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
+  /*font-optical-sizing: auto; */
+  /* apparently this property doesnt exist according to w3c so idk */
   font-weight: 400;
   font-style: normal;
   font-size: 1.5em;
@@ -84,7 +86,8 @@ body {
 }
 .content nav a {
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
+  /*font-optical-sizing: auto; */
+  /* apparently this property doesnt exist according to w3c so idk */
   font-weight: 400;
   font-style: normal;
   box-sizing: content-box;
@@ -109,7 +112,8 @@ body {
 }
 .content .leftCard, .content .rightCard {
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
+  /*font-optical-sizing: auto; */
+  /* apparently this property doesnt exist according to w3c so idk */
   font-weight: 400;
   font-style: normal;
   background-image: linear-gradient(to bottom right, hotpink, pink);
@@ -145,8 +149,8 @@ body {
 .content .leftCard iframe, .content .rightCard iframe {
   float: left;
   border: 3px dashed white;
-  width: 560;
-  height: 315;
+  width: 560px;
+  height: 315px;
   border-radius: 10px;
   margin-right: 20px;
   margin-bottom: 20px;

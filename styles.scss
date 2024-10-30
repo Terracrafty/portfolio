@@ -17,7 +17,8 @@ $spaceborder: 10px darkslateblue outset;
 
 @mixin fontNunito {
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
+    /*font-optical-sizing: auto; */
+    /* apparently this property doesnt exist according to w3c so idk */
     font-weight: 400;
     font-style: normal;
 }
@@ -148,8 +149,8 @@ body {
         iframe {
             float: left;
             border: 3px dashed white;
-            width: 560;
-            height: 315;
+            width: 560px;
+            height: 315px;
             border-radius: 10px;
             margin-right: 20px;
             margin-bottom: 20px;
